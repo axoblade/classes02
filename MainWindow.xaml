@@ -1,0 +1,27 @@
+﻿<Window x:Class="ClassesAndObjects.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClassesAndObjects"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="Enter a number" Width="500" Padding="5" Margin="5"/>
+        <TextBox x:Name="entryBox" Width="500" Padding="5" Margin="5"/>
+        <TextBox x:Name="lastNameEntry" Width="500" Padding="5" Margin="5"/>
+        <TextBox x:Name="middleNameEntry" Width="500" Padding="5" Margin="5"/>
+        <Button Content="Save" Click="submitBtn_Click" x:Name="submitBtn" Width="500" Padding="5" Margin="5"/>
+
+        <ListBox Width="500" Padding="5" Margin="5" x:Name="listBox">
+            <!--<ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock FontStyle="Italic" Text="{Binding firstName}" />
+                        <TextBlock FontSize="18" Text="{Binding lastName}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>-->
+        </ListBox>
+    </StackPanel>
+</Window>
